@@ -1,0 +1,19 @@
+{
+  "name": "es6-sandbox",
+  "version": "1.0.0",
+  "description": "ES6 features in depth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paerallax/es6-sandbox.git"
+  },
+  "author": "Robert Adamyan <robert.adamyan1@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paerallax/es6-sandbox/issues"
+  },
+  "homepage": "https://github.com/paerallax/es6-sandbox#readme"
+}
