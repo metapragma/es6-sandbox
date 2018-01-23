@@ -2,7 +2,7 @@
 const evens = []
 for (let i = 0; i < 100; i += 1) {
   if (i % 2 === 0) {
-    evens.push (i)
+    evens.push(i)
   }
 }
 const odds = evens.map(v => v + 1)
@@ -11,18 +11,18 @@ const nums = evens.map((v, i) => v + i)
 // Statement bodies
 const fives = []
 nums.forEach(v => {
-  if (v % 5 === 0)
-    fives.push(v)
+  if (v % 5 === 0) fives.push(v)
 })
 
 // Lexical this
 // Unlike functions, arrows share the same lexical this as their surrounding code
 const bob = {
-  _name: "Bob",
+  _name: 'Bob',
   _friends: [],
   printFriends() {
     this._friends.forEach(friend =>
-      console.log(this._name + " knows " + friend))
+      console.log(this._name + ' knows ' + friend)
+    )
   }
 }
 bob._friends.push('rob', 'lucy', 'jack')

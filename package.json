@@ -4,7 +4,10 @@
   "description": "ES6 features in depth",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write src/*.js",
+    "prettier:watch": "onchange 'src/*.js' -- prettier --write {{changed}}",
+    "precommit": "pretty-quick --staged"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,20 @@
   "bugs": {
     "url": "https://github.com/paerallax/es6-sandbox/issues"
   },
-  "homepage": "https://github.com/paerallax/es6-sandbox#readme"
+  "homepage": "https://github.com/paerallax/es6-sandbox#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
+    "onchange": "^3.3.0",
+    "prettier": "1.10.2",
+    "pretty-quick": "^1.2.2"
+  }
 }

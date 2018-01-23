@@ -12,8 +12,9 @@ const madPhilosopher = 'Immanuel Kant'
 console.log(`${madPhilosopher} is the father of transcendentalism.`)
 
 // Basically any valid JavaScript expression can be interpolated
-const s = 120, t = 2
-console.log(`The car is moving at ${ s / t } km/h`)
+const s = 120,
+  t = 2
+console.log(`The car is moving at ${s / t} km/h`)
 
 // TODO: add example
 // You can use tagged templates to change how expressions are interpolated
